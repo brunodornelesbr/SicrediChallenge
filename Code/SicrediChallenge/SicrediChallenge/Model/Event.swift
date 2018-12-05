@@ -17,6 +17,7 @@ class Event: Mappable {
     var description = ""
     var date = "1534784400000"
     var people = [Person]()
+    var discount : [Discount]?
     required convenience init?(map: Map) {
         self.init()
     }
@@ -29,6 +30,7 @@ class Event: Mappable {
         longitude<-map[EventJsonConstants.longitude.rawValue]
         description<-map[EventJsonConstants.description.rawValue]
         date<-map[EventJsonConstants.date.rawValue]
-        people<-map["people"]
+        people<-map[EventJsonConstants.people.rawValue]
+        discount<-map[EventJsonConstants.discount.rawValue]
         }
 }

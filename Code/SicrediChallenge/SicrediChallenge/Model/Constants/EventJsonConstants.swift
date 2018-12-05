@@ -17,4 +17,5 @@ enum EventJsonConstants : String {
     case description = "description"
     case date = "date"
     case people = "people"
+    case discount = "cupons"
 }
