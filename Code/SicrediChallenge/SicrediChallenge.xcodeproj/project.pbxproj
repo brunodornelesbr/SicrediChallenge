@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64FB9C0A87D1115D5844E7AB /* Pods_SicrediChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F71A9BDC5F0C9FCC715B9D /* Pods_SicrediChallengeTests.framework */; };
+		878A6FF3AA871BE0A8E065AA /* Pods_SicrediChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9591247ADA8FA697F0EB6531 /* Pods_SicrediChallenge.framework */; };
 		9A9069E221B8159300364E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9069E121B8159300364E00 /* AppDelegate.swift */; };
 		9A9069E421B8159300364E00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9069E321B8159300364E00 /* ViewController.swift */; };
 		9A9069E721B8159300364E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9069E521B8159300364E00 /* Main.storyboard */; };
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73F71A9BDC5F0C9FCC715B9D /* Pods_SicrediChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86EE159E6542C6A8B400950D /* Pods-SicrediChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		9591247ADA8FA697F0EB6531 /* Pods_SicrediChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9069DE21B8159300364E00 /* SicrediChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9069E121B8159300364E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9069E321B8159300364E00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		9A9069F221B8159600364E00 /* SicrediChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicrediChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9069F621B8159600364E00 /* SicrediChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicrediChallengeTests.swift; sourceTree = "<group>"; };
 		9A9069F821B8159600364E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0FA7F5E73D2E9A3DCF77D26 /* Pods-SicrediChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		EDC75E3098B1E827DB7092E6 /* Pods-SicrediChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		FFFA4FEE3443D7223BBC5C5E /* Pods-SicrediChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878A6FF3AA871BE0A8E065AA /* Pods_SicrediChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FB9C0A87D1115D5844E7AB /* Pods_SicrediChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94DDD066EA0D4D9AEC21BA90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9591247ADA8FA697F0EB6531 /* Pods_SicrediChallenge.framework */,
+				73F71A9BDC5F0C9FCC715B9D /* Pods_SicrediChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A9069D521B8159300364E00 = {
 			isa = PBXGroup;
 			children = (
 				9A9069E021B8159300364E00 /* SicrediChallenge */,
 				9A9069F521B8159600364E00 /* SicrediChallengeTests */,
 				9A9069DF21B8159300364E00 /* Products */,
+				D1A1CEDF7146F9FF70C6804A /* Pods */,
+				94DDD066EA0D4D9AEC21BA90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +100,7 @@
 			children = (
 				9A9069E121B8159300364E00 /* AppDelegate.swift */,
 				9A9069E321B8159300364E00 /* ViewController.swift */,
+				9A906A0221B8162500364E00 /* Model */,
 				9A9069E521B8159300364E00 /* Main.storyboard */,
 				9A9069E821B8159600364E00 /* Assets.xcassets */,
 				9A9069EA21B8159600364E00 /* LaunchScreen.storyboard */,
@@ -96,6 +118,24 @@
 			path = SicrediChallengeTests;
 			sourceTree = "<group>";
 		};
+		9A906A0221B8162500364E00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1A1CEDF7146F9FF70C6804A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0FA7F5E73D2E9A3DCF77D26 /* Pods-SicrediChallenge.debug.xcconfig */,
+				EDC75E3098B1E827DB7092E6 /* Pods-SicrediChallenge.release.xcconfig */,
+				FFFA4FEE3443D7223BBC5C5E /* Pods-SicrediChallengeTests.debug.xcconfig */,
+				86EE159E6542C6A8B400950D /* Pods-SicrediChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A9069FB21B8159600364E00 /* Build configuration list for PBXNativeTarget "SicrediChallenge" */;
 			buildPhases = (
+				3B235FACD09FE5A026B5BA3E /* [CP] Check Pods Manifest.lock */,
 				9A9069DA21B8159300364E00 /* Sources */,
 				9A9069DB21B8159300364E00 /* Frameworks */,
 				9A9069DC21B8159300364E00 /* Resources */,
+				C05111C5EB84B416577436AA /* [CP] Embed Pods Frameworks */,
+				DD45AC228B25FBF1D9DA8040 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A9069FE21B8159600364E00 /* Build configuration list for PBXNativeTarget "SicrediChallengeTests" */;
 			buildPhases = (
+				F18FDB53856D2F33E867227B /* [CP] Check Pods Manifest.lock */,
 				9A9069EE21B8159600364E00 /* Sources */,
 				9A9069EF21B8159600364E00 /* Frameworks */,
 				9A9069F021B8159600364E00 /* Resources */,
+				63462750BD8DC7C978CCA1BD /* [CP] Embed Pods Frameworks */,
+				40C4C70F16401EDF87CEDE79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +237,114 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B235FACD09FE5A026B5BA3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SicrediChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40C4C70F16401EDF87CEDE79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63462750BD8DC7C978CCA1BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C05111C5EB84B416577436AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD45AC228B25FBF1D9DA8040 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F18FDB53856D2F33E867227B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SicrediChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A9069DA21B8159300364E00 /* Sources */ = {
@@ -358,15 +512,13 @@
 		};
 		9A9069FC21B8159600364E00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0FA7F5E73D2E9A3DCF77D26 /* Pods-SicrediChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B65B7G9L44;
 				INFOPLIST_FILE = SicrediChallenge/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brunodorneles.SicrediChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -376,15 +528,13 @@
 		};
 		9A9069FD21B8159600364E00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC75E3098B1E827DB7092E6 /* Pods-SicrediChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B65B7G9L44;
 				INFOPLIST_FILE = SicrediChallenge/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brunodorneles.SicrediChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -394,17 +544,14 @@
 		};
 		9A9069FF21B8159600364E00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFA4FEE3443D7223BBC5C5E /* Pods-SicrediChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B65B7G9L44;
 				INFOPLIST_FILE = SicrediChallengeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brunodorneles.SicrediChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -415,17 +562,14 @@
 		};
 		9A906A0021B8159600364E00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86EE159E6542C6A8B400950D /* Pods-SicrediChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B65B7G9L44;
 				INFOPLIST_FILE = SicrediChallengeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = brunodorneles.SicrediChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
