@@ -7,7 +7,15 @@
 //
 
 import UIKit
-
+import Alamofire
+import AlamofireObjectMapper
 class Request: NSObject {
 
+    func requestEvents(completion : @escaping([Event],Error?)->()){
+        let eventsURL = API.event_url
+        Alamofire.request(eventsURL,method: .get, parameters : nil, headers : nil).responseArray(completionHandler:{(response:DataResponse<[Event]>) in
+            completion(response.result.value ?? [],response.error)
+        })
+        }
 }
+

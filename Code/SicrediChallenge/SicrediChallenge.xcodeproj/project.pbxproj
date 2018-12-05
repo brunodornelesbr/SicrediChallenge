@@ -17,6 +17,12 @@
 		9A9069F721B8159600364E00 /* SicrediChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9069F621B8159600364E00 /* SicrediChallengeTests.swift */; };
 		9A906A0521B817A700364E00 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0421B817A700364E00 /* Request.swift */; };
 		9A906A0821B817B900364E00 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0721B817B900364E00 /* API.swift */; };
+		9A906A0A21B8197B00364E00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0921B8197B00364E00 /* Event.swift */; };
+		9A906A0C21B81AF100364E00 /* RequestClassTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0B21B81AF100364E00 /* RequestClassTest.swift */; };
+		9A906A0E21B8266600364E00 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0D21B8266600364E00 /* Person.swift */; };
+		9A906A1021B826F000364E00 /* EventJsonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0F21B826F000364E00 /* EventJsonConstants.swift */; };
+		9A906A1221B82F9600364E00 /* PersonJsonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A1121B82F9600364E00 /* PersonJsonConstants.swift */; };
+		9A906A1621B83E9300364E00 /* JsonMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A1521B83E9300364E00 /* JsonMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		9A9069F821B8159600364E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A906A0421B817A700364E00 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9A906A0721B817B900364E00 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9A906A0921B8197B00364E00 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9A906A0B21B81AF100364E00 /* RequestClassTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestClassTest.swift; sourceTree = "<group>"; };
+		9A906A0D21B8266600364E00 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9A906A0F21B826F000364E00 /* EventJsonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventJsonConstants.swift; sourceTree = "<group>"; };
+		9A906A1121B82F9600364E00 /* PersonJsonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonJsonConstants.swift; sourceTree = "<group>"; };
+		9A906A1521B83E9300364E00 /* JsonMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMock.swift; sourceTree = "<group>"; };
 		D0FA7F5E73D2E9A3DCF77D26 /* Pods-SicrediChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		EDC75E3098B1E827DB7092E6 /* Pods-SicrediChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		FFFA4FEE3443D7223BBC5C5E /* Pods-SicrediChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				9A9069F621B8159600364E00 /* SicrediChallengeTests.swift */,
+				9A906A0B21B81AF100364E00 /* RequestClassTest.swift */,
+				9A906A1521B83E9300364E00 /* JsonMock.swift */,
 				9A9069F821B8159600364E00 /* Info.plist */,
 			);
 			path = SicrediChallengeTests;
@@ -127,6 +141,8 @@
 			children = (
 				9A906A0621B817B100364E00 /* Constants */,
 				9A906A0321B8179C00364E00 /* Network */,
+				9A906A0921B8197B00364E00 /* Event.swift */,
+				9A906A0D21B8266600364E00 /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				9A906A0721B817B900364E00 /* API.swift */,
+				9A906A0F21B826F000364E00 /* EventJsonConstants.swift */,
+				9A906A1121B82F9600364E00 /* PersonJsonConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -375,7 +393,11 @@
 			files = (
 				9A9069E421B8159300364E00 /* ViewController.swift in Sources */,
 				9A906A0521B817A700364E00 /* Request.swift in Sources */,
+				9A906A1221B82F9600364E00 /* PersonJsonConstants.swift in Sources */,
+				9A906A1021B826F000364E00 /* EventJsonConstants.swift in Sources */,
+				9A906A0A21B8197B00364E00 /* Event.swift in Sources */,
 				9A906A0821B817B900364E00 /* API.swift in Sources */,
+				9A906A0E21B8266600364E00 /* Person.swift in Sources */,
 				9A9069E221B8159300364E00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +406,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A906A1621B83E9300364E00 /* JsonMock.swift in Sources */,
+				9A906A0C21B81AF100364E00 /* RequestClassTest.swift in Sources */,
 				9A9069F721B8159600364E00 /* SicrediChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
