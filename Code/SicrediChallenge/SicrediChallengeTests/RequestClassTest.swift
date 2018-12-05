@@ -30,16 +30,10 @@ class RequestMock : Request{
 }
 class RequestClassTest: XCTestCase {
     var request : Request!
-   
-    
-    override func setUp() {
+       override func setUp() {
        request = RequestMock()
-        
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
     
     func testRequestObjectMapperShouldWork(){
         request.requestEvents(completion: {(result,error) in
@@ -54,7 +48,7 @@ class RequestClassTest: XCTestCase {
             XCTAssert(result.first?.date == event[EventJsonConstants.date.rawValue] as? String, "date malformed")
             XCTAssert(result.first?.discount == nil, "discount should be nil")
             
-            let peopleArray = JsonMock.jsonEventRequest[EventJsonConstants.people.rawValue] as! [[String : Any]]
+            let peopleArray = event[EventJsonConstants.people.rawValue] as! [[String : Any]]
             XCTAssert((result.first?.people.count ?? 0)>0, "People malformed!")
             XCTAssert(result.first?.people.first?.id == peopleArray.first?[PersonJsonConstants.id.rawValue]as? String, "person id malformed")
             XCTAssert(result.first?.people.first?.picture == peopleArray.first?[PersonJsonConstants.picture.rawValue]as? String, "person picture malformed")
@@ -75,15 +69,14 @@ class RequestClassTest: XCTestCase {
             XCTAssert(result.first?.longitude == event[EventJsonConstants.longitude.rawValue] as? String, "longitude malformed")
             XCTAssert(result.first?.description == event[EventJsonConstants.description.rawValue] as? String, "description malformed")
             XCTAssert(result.first?.date == event[EventJsonConstants.date.rawValue] as? String, "date malformed")
-            XCTAssert(result.first?.discount != nil, "discount should not be nil")
+            XCTAssert(result.first?.discount != nil, "discount should NOT be nil")
             
-            let peopleArray = JsonMock.jsonEventRequest[EventJsonConstants.people.rawValue] as! [[String : Any]]
+            let peopleArray = event[EventJsonConstants.people.rawValue] as! [[String : Any]]
             XCTAssert((result.first?.people.count ?? 0)>0, "People malformed!")
             XCTAssert(result.first?.people.first?.id == peopleArray.first?[PersonJsonConstants.id.rawValue]as? String, "person id malformed")
             XCTAssert(result.first?.people.first?.picture == peopleArray.first?[PersonJsonConstants.picture.rawValue]as? String, "person picture malformed")
             XCTAssert(result.first?.people.first?.eventId == peopleArray.first?[PersonJsonConstants.eventId.rawValue]as? String, "person eventId malformed")
             XCTAssert(result.first?.people.first?.name == peopleArray.first?[PersonJsonConstants.name.rawValue] as? String, "person name malformed")
-            
         })
     }
 }
