@@ -35,11 +35,42 @@
                     <navigationItem key="navigationItem" title="Events" id="75m-Fe-f9f"/>
                     <connections>
                         <outlet property="tableView" destination="JzS-cu-wul" id="cQx-we-fcK"/>
+                        <segue destination="ja5-nr-o4y" kind="show" identifier="showDetails" id="etZ-Tn-mD4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1034" y="-629"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="U6w-mm-pg8">
+            <objects>
+                <viewController id="ja5-nr-o4y" customClass="DetailsViewController" customModule="SicrediChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D9b-aB-hOF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JZF-2F-K2T">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JZF-2F-K2T" firstAttribute="top" secondItem="RG6-B9-3BL" secondAttribute="top" id="BVW-vg-vNc"/>
+                            <constraint firstItem="RG6-B9-3BL" firstAttribute="trailing" secondItem="JZF-2F-K2T" secondAttribute="trailing" id="DVL-Yu-Bzs"/>
+                            <constraint firstItem="JZF-2F-K2T" firstAttribute="leading" secondItem="RG6-B9-3BL" secondAttribute="leading" id="ESl-eQ-E3R"/>
+                            <constraint firstItem="RG6-B9-3BL" firstAttribute="bottom" secondItem="JZF-2F-K2T" secondAttribute="bottom" id="SaV-BW-XxT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RG6-B9-3BL"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="JZF-2F-K2T" id="ksP-qg-OAS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0d2-xa-XJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082" y="-629"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MVs-5c-rOz">
@@ -49,6 +80,15 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="jny-b1-6Tp">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.79215686269999996" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.79215686269999996" green="0.53725490200000003" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

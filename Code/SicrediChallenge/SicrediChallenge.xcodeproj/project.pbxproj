@@ -11,7 +11,6 @@
 		878A6FF3AA871BE0A8E065AA /* Pods_SicrediChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9591247ADA8FA697F0EB6531 /* Pods_SicrediChallenge.framework */; };
 		9A9069E221B8159300364E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9069E121B8159300364E00 /* AppDelegate.swift */; };
 		9A9069E721B8159300364E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9069E521B8159300364E00 /* Main.storyboard */; };
-		9A9069E921B8159600364E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9069E821B8159600364E00 /* Assets.xcassets */; };
 		9A9069EC21B8159600364E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9069EA21B8159600364E00 /* LaunchScreen.storyboard */; };
 		9A906A0521B817A700364E00 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0421B817A700364E00 /* Request.swift */; };
 		9A906A0821B817B900364E00 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0721B817B900364E00 /* API.swift */; };
@@ -31,6 +30,16 @@
 		9A906A2C21B8B21C00364E00 /* MainEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A906A2B21B8B21B00364E00 /* MainEventCell.xib */; };
 		9A906A2E21B8B33600364E00 /* MainEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A2D21B8B33600364E00 /* MainEventTableViewCell.swift */; };
 		9A906A3021B8B40C00364E00 /* Extension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A2F21B8B40C00364E00 /* Extension+UITableViewCell.swift */; };
+		9A906A3221B8C34C00364E00 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A3121B8C34C00364E00 /* DetailsViewController.swift */; };
+		9A906A3421B8C35E00364E00 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A3321B8C35E00364E00 /* DetailsViewModel.swift */; };
+		9A906A3821B8C4CB00364E00 /* OptionsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A906A3521B8C4CB00364E00 /* OptionsViewCell.xib */; };
+		9A906A3921B8C4CB00364E00 /* CommentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A906A3621B8C4CB00364E00 /* CommentViewCell.xib */; };
+		9A906A3A21B8C4CB00364E00 /* ImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A906A3721B8C4CB00364E00 /* ImageViewCell.xib */; };
+		9A906A3C21B8C52000364E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A906A3B21B8C52000364E00 /* Assets.xcassets */; };
+		9A906A4021B8C59B00364E00 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A3D21B8C59A00364E00 /* OptionsTableViewCell.swift */; };
+		9A906A4121B8C59B00364E00 /* ImageViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A3E21B8C59A00364E00 /* ImageViewTableViewCell.swift */; };
+		9A906A4221B8C59B00364E00 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A3F21B8C59B00364E00 /* CommentTableViewCell.swift */; };
+		9A906A4421B8C62E00364E00 /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A4321B8C62E00364E00 /* Extension+UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +59,6 @@
 		9A9069DE21B8159300364E00 /* SicrediChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9069E121B8159300364E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9069E621B8159300364E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A9069E821B8159600364E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A9069EB21B8159600364E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A9069ED21B8159600364E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A9069F221B8159600364E00 /* SicrediChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicrediChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +81,16 @@
 		9A906A2B21B8B21B00364E00 /* MainEventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainEventCell.xib; sourceTree = "<group>"; };
 		9A906A2D21B8B33600364E00 /* MainEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventTableViewCell.swift; sourceTree = "<group>"; };
 		9A906A2F21B8B40C00364E00 /* Extension+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewCell.swift"; sourceTree = "<group>"; };
+		9A906A3121B8C34C00364E00 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		9A906A3321B8C35E00364E00 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		9A906A3521B8C4CB00364E00 /* OptionsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsViewCell.xib; sourceTree = "<group>"; };
+		9A906A3621B8C4CB00364E00 /* CommentViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewCell.xib; sourceTree = "<group>"; };
+		9A906A3721B8C4CB00364E00 /* ImageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
+		9A906A3B21B8C52000364E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../4all/Code/fourAllChallenge/fourAllChallenge/Assets.xcassets; sourceTree = "<group>"; };
+		9A906A3D21B8C59A00364E00 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		9A906A3E21B8C59A00364E00 /* ImageViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewTableViewCell.swift; sourceTree = "<group>"; };
+		9A906A3F21B8C59B00364E00 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		9A906A4321B8C62E00364E00 /* Extension+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
 		D0FA7F5E73D2E9A3DCF77D26 /* Pods-SicrediChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		EDC75E3098B1E827DB7092E6 /* Pods-SicrediChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		FFFA4FEE3443D7223BBC5C5E /* Pods-SicrediChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +154,7 @@
 				9A906A1D21B858B200364E00 /* Extensions */,
 				9A906A0221B8162500364E00 /* Model */,
 				9A906A2921B8B0E600364E00 /* Views */,
-				9A9069E821B8159600364E00 /* Assets.xcassets */,
+				9A906A3B21B8C52000364E00 /* Assets.xcassets */,
 				9A9069ED21B8159600364E00 /* Info.plist */,
 			);
 			path = SicrediChallenge;
@@ -189,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				9A906A1E21B858CA00364E00 /* Extension+String.swift */,
+				9A906A4321B8C62E00364E00 /* Extension+UIButton.swift */,
 				9A906A2F21B8B40C00364E00 /* Extension+UITableViewCell.swift */,
 			);
 			path = Extensions;
@@ -198,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				9A906A2421B8B01000364E00 /* MainViewController.swift */,
+				9A906A3121B8C34C00364E00 /* DetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -206,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				9A906A2621B8B03000364E00 /* MainViewModel.swift */,
+				9A906A3321B8C35E00364E00 /* DetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -224,6 +245,12 @@
 			isa = PBXGroup;
 			children = (
 				9A906A2B21B8B21B00364E00 /* MainEventCell.xib */,
+				9A906A3621B8C4CB00364E00 /* CommentViewCell.xib */,
+				9A906A3721B8C4CB00364E00 /* ImageViewCell.xib */,
+				9A906A3F21B8C59B00364E00 /* CommentTableViewCell.swift */,
+				9A906A3E21B8C59A00364E00 /* ImageViewTableViewCell.swift */,
+				9A906A3D21B8C59A00364E00 /* OptionsTableViewCell.swift */,
+				9A906A3521B8C4CB00364E00 /* OptionsViewCell.xib */,
 				9A906A2D21B8B33600364E00 /* MainEventTableViewCell.swift */,
 			);
 			path = Cells;
@@ -327,9 +354,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A906A3821B8C4CB00364E00 /* OptionsViewCell.xib in Resources */,
 				9A9069EC21B8159600364E00 /* LaunchScreen.storyboard in Resources */,
+				9A906A3921B8C4CB00364E00 /* CommentViewCell.xib in Resources */,
 				9A906A2C21B8B21C00364E00 /* MainEventCell.xib in Resources */,
-				9A9069E921B8159600364E00 /* Assets.xcassets in Resources */,
+				9A906A3A21B8C4CB00364E00 /* ImageViewCell.xib in Resources */,
+				9A906A3C21B8C52000364E00 /* Assets.xcassets in Resources */,
 				9A9069E721B8159300364E00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,11 +496,16 @@
 				9A906A2521B8B01000364E00 /* MainViewController.swift in Sources */,
 				9A906A0521B817A700364E00 /* Request.swift in Sources */,
 				9A906A3021B8B40C00364E00 /* Extension+UITableViewCell.swift in Sources */,
+				9A906A4221B8C59B00364E00 /* CommentTableViewCell.swift in Sources */,
 				9A906A1A21B84B4600364E00 /* DiscountJsonConstants.swift in Sources */,
 				9A906A1821B8486300364E00 /* Discount.swift in Sources */,
 				9A906A1221B82F9600364E00 /* PersonJsonConstants.swift in Sources */,
 				9A906A2E21B8B33600364E00 /* MainEventTableViewCell.swift in Sources */,
+				9A906A4121B8C59B00364E00 /* ImageViewTableViewCell.swift in Sources */,
 				9A906A1021B826F000364E00 /* EventJsonConstants.swift in Sources */,
+				9A906A4421B8C62E00364E00 /* Extension+UIButton.swift in Sources */,
+				9A906A4021B8C59B00364E00 /* OptionsTableViewCell.swift in Sources */,
+				9A906A3221B8C34C00364E00 /* DetailsViewController.swift in Sources */,
 				9A906A2721B8B03000364E00 /* MainViewModel.swift in Sources */,
 				9A906A0A21B8197B00364E00 /* Event.swift in Sources */,
 				9A906A0821B817B900364E00 /* API.swift in Sources */,
@@ -478,6 +513,7 @@
 				9A906A0E21B8266600364E00 /* Person.swift in Sources */,
 				9A9069E221B8159300364E00 /* AppDelegate.swift in Sources */,
 				9A906A1C21B8558500364E00 /* CheckInResponse.swift in Sources */,
+				9A906A3421B8C35E00364E00 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,7 +680,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B65B7G9L44;
 				INFOPLIST_FILE = SicrediChallenge/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = brunodorneles.SicrediChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -660,7 +699,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B65B7G9L44;
 				INFOPLIST_FILE = SicrediChallenge/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = brunodorneles.SicrediChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -677,7 +719,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B65B7G9L44;
 				INFOPLIST_FILE = SicrediChallengeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = brunodorneles.SicrediChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -695,7 +741,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B65B7G9L44;
 				INFOPLIST_FILE = SicrediChallengeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = brunodorneles.SicrediChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

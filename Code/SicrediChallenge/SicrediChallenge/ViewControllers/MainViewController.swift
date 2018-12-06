@@ -17,6 +17,7 @@ class MainViewController: UIViewController {
     //MARK: - Outlets and Components
     @IBOutlet weak var tableView: UITableView!
     let search = UISearchController(searchResultsController: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewSetup()
@@ -27,17 +28,24 @@ class MainViewController: UIViewController {
     func tableViewSetup(){
         tableView.register(UINib(nibName: MainEventTableViewCell.xibName, bundle: nil), forCellReuseIdentifier: MainEventTableViewCell.reuseIdentifier())
        
-        self.tableView.rx.setDelegate(self)
+        tableView.rx.setDelegate(self).disposed(by: bag)
         mainViewModel.eventObservable.bind(to: tableView.rx.items(cellIdentifier: MainEventTableViewCell.reuseIdentifier(), cellType: MainEventTableViewCell.self)){  row, element, cell in
            cell.setup(event: element)
             }.disposed(by: bag)
         
+        tableView.rx.itemSelected
+            .subscribe(onNext: { [weak self] indexPath in
+                DispatchQueue.main.async {
+                    self?.selectedEventWithRow(row: indexPath.row)
+                }
+            }).disposed(by: bag)
         
     }
     
     func searchBarSetup(){
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.definesPresentationContext = true
+        self.definesPresentationContext = true
         search.searchBar.barStyle = .default
         search.searchBar.placeholder = "Search for events"
         search.dimsBackgroundDuringPresentation = false
@@ -61,15 +69,28 @@ class MainViewController: UIViewController {
                 self?.mainViewModel.requestEvents()})
             .disposed(by: bag)
     }
-    /*
+    
+    
+    func selectedEventWithRow(row: Int){
+        let event = mainViewModel.eventForRow(row: row) as Any
+        performSegue(withIdentifier: "showDetails", sender: event )
+    }
+
+    
      // MARK: - Navigation
      
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
+        switch segue.identifier {
+        case "showDetails":
+            if let destination = segue.destination as? DetailsViewController, let event = sender as? Event {
+                destination.detailsViewModel = DetailsViewModel(event: event)
+            }
+        default:
+            print("destination not being used")
+        }
+        
      }
-     */
+ 
     
 }
 
