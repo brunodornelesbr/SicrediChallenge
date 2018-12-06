@@ -49,7 +49,7 @@ class MainViewController: UIViewController {
         search.searchBar.barStyle = .default
         search.searchBar.placeholder = "Search for events"
         search.dimsBackgroundDuringPresentation = false
-        search.searchBar.tintColor = .blue
+        search.searchBar.tintColor = .white
         self.navigationItem.searchController = search
         
         searchBarRxSetup()
