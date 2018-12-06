@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64FB9C0A87D1115D5844E7AB /* Pods_SicrediChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F71A9BDC5F0C9FCC715B9D /* Pods_SicrediChallengeTests.framework */; };
+		878A6FF3AA871BE0A8E065AA /* Pods_SicrediChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9591247ADA8FA697F0EB6531 /* Pods_SicrediChallenge.framework */; };
 		9A9069E221B8159300364E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9069E121B8159300364E00 /* AppDelegate.swift */; };
-		9A9069E421B8159300364E00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9069E321B8159300364E00 /* ViewController.swift */; };
 		9A9069E721B8159300364E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9069E521B8159300364E00 /* Main.storyboard */; };
 		9A9069E921B8159600364E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9069E821B8159600364E00 /* Assets.xcassets */; };
 		9A9069EC21B8159600364E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9069EA21B8159600364E00 /* LaunchScreen.storyboard */; };
-		9A9069F721B8159600364E00 /* SicrediChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9069F621B8159600364E00 /* SicrediChallengeTests.swift */; };
+		9A906A0521B817A700364E00 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0421B817A700364E00 /* Request.swift */; };
+		9A906A0821B817B900364E00 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0721B817B900364E00 /* API.swift */; };
+		9A906A0A21B8197B00364E00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0921B8197B00364E00 /* Event.swift */; };
+		9A906A0C21B81AF100364E00 /* RequestClassTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0B21B81AF100364E00 /* RequestClassTest.swift */; };
+		9A906A0E21B8266600364E00 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0D21B8266600364E00 /* Person.swift */; };
+		9A906A1021B826F000364E00 /* EventJsonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0F21B826F000364E00 /* EventJsonConstants.swift */; };
+		9A906A1221B82F9600364E00 /* PersonJsonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A1121B82F9600364E00 /* PersonJsonConstants.swift */; };
+		9A906A1621B83E9300364E00 /* JsonMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A1521B83E9300364E00 /* JsonMock.swift */; };
+		9A906A1821B8486300364E00 /* Discount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A1721B8486300364E00 /* Discount.swift */; };
+		9A906A1A21B84B4600364E00 /* DiscountJsonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A1921B84B4600364E00 /* DiscountJsonConstants.swift */; };
+		9A906A1C21B8558500364E00 /* CheckInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A1B21B8558500364E00 /* CheckInResponse.swift */; };
+		9A906A1F21B858CA00364E00 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A1E21B858CA00364E00 /* Extension+String.swift */; };
+		9A906A2121B8AEF700364E00 /* CheckInResponseJsonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A2021B8AEF700364E00 /* CheckInResponseJsonConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +39,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73F71A9BDC5F0C9FCC715B9D /* Pods_SicrediChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86EE159E6542C6A8B400950D /* Pods-SicrediChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		9591247ADA8FA697F0EB6531 /* Pods_SicrediChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9069DE21B8159300364E00 /* SicrediChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9069E121B8159300364E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A9069E321B8159300364E00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9A9069E621B8159300364E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A9069E821B8159600364E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A9069EB21B8159600364E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A9069ED21B8159600364E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A9069F221B8159600364E00 /* SicrediChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SicrediChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A9069F621B8159600364E00 /* SicrediChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicrediChallengeTests.swift; sourceTree = "<group>"; };
 		9A9069F821B8159600364E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A906A0421B817A700364E00 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		9A906A0721B817B900364E00 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9A906A0921B8197B00364E00 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9A906A0B21B81AF100364E00 /* RequestClassTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestClassTest.swift; sourceTree = "<group>"; };
+		9A906A0D21B8266600364E00 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9A906A0F21B826F000364E00 /* EventJsonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventJsonConstants.swift; sourceTree = "<group>"; };
+		9A906A1121B82F9600364E00 /* PersonJsonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonJsonConstants.swift; sourceTree = "<group>"; };
+		9A906A1521B83E9300364E00 /* JsonMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMock.swift; sourceTree = "<group>"; };
+		9A906A1721B8486300364E00 /* Discount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discount.swift; sourceTree = "<group>"; };
+		9A906A1921B84B4600364E00 /* DiscountJsonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountJsonConstants.swift; sourceTree = "<group>"; };
+		9A906A1B21B8558500364E00 /* CheckInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInResponse.swift; sourceTree = "<group>"; };
+		9A906A1E21B858CA00364E00 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		9A906A2021B8AEF700364E00 /* CheckInResponseJsonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInResponseJsonConstants.swift; sourceTree = "<group>"; };
+		D0FA7F5E73D2E9A3DCF77D26 /* Pods-SicrediChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		EDC75E3098B1E827DB7092E6 /* Pods-SicrediChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		FFFA4FEE3443D7223BBC5C5E /* Pods-SicrediChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878A6FF3AA871BE0A8E065AA /* Pods_SicrediChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +81,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64FB9C0A87D1115D5844E7AB /* Pods_SicrediChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94DDD066EA0D4D9AEC21BA90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9591247ADA8FA697F0EB6531 /* Pods_SicrediChallenge.framework */,
+				73F71A9BDC5F0C9FCC715B9D /* Pods_SicrediChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A9069D521B8159300364E00 = {
 			isa = PBXGroup;
 			children = (
 				9A9069E021B8159300364E00 /* SicrediChallenge */,
 				9A9069F521B8159600364E00 /* SicrediChallengeTests */,
 				9A9069DF21B8159300364E00 /* Products */,
+				D1A1CEDF7146F9FF70C6804A /* Pods */,
+				94DDD066EA0D4D9AEC21BA90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				9A9069E121B8159300364E00 /* AppDelegate.swift */,
-				9A9069E321B8159300364E00 /* ViewController.swift */,
+				9A906A1D21B858B200364E00 /* Extensions */,
+				9A906A0221B8162500364E00 /* Model */,
 				9A9069E521B8159300364E00 /* Main.storyboard */,
 				9A9069E821B8159600364E00 /* Assets.xcassets */,
 				9A9069EA21B8159600364E00 /* LaunchScreen.storyboard */,
@@ -90,10 +134,63 @@
 		9A9069F521B8159600364E00 /* SicrediChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A9069F621B8159600364E00 /* SicrediChallengeTests.swift */,
+				9A906A0B21B81AF100364E00 /* RequestClassTest.swift */,
+				9A906A1521B83E9300364E00 /* JsonMock.swift */,
 				9A9069F821B8159600364E00 /* Info.plist */,
 			);
 			path = SicrediChallengeTests;
+			sourceTree = "<group>";
+		};
+		9A906A0221B8162500364E00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A906A0621B817B100364E00 /* Constants */,
+				9A906A0321B8179C00364E00 /* Network */,
+				9A906A0921B8197B00364E00 /* Event.swift */,
+				9A906A1721B8486300364E00 /* Discount.swift */,
+				9A906A0D21B8266600364E00 /* Person.swift */,
+				9A906A1B21B8558500364E00 /* CheckInResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A906A0321B8179C00364E00 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9A906A0421B817A700364E00 /* Request.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9A906A0621B817B100364E00 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9A906A0721B817B900364E00 /* API.swift */,
+				9A906A0F21B826F000364E00 /* EventJsonConstants.swift */,
+				9A906A1121B82F9600364E00 /* PersonJsonConstants.swift */,
+				9A906A1921B84B4600364E00 /* DiscountJsonConstants.swift */,
+				9A906A2021B8AEF700364E00 /* CheckInResponseJsonConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9A906A1D21B858B200364E00 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A906A1E21B858CA00364E00 /* Extension+String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D1A1CEDF7146F9FF70C6804A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0FA7F5E73D2E9A3DCF77D26 /* Pods-SicrediChallenge.debug.xcconfig */,
+				EDC75E3098B1E827DB7092E6 /* Pods-SicrediChallenge.release.xcconfig */,
+				FFFA4FEE3443D7223BBC5C5E /* Pods-SicrediChallengeTests.debug.xcconfig */,
+				86EE159E6542C6A8B400950D /* Pods-SicrediChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A9069FB21B8159600364E00 /* Build configuration list for PBXNativeTarget "SicrediChallenge" */;
 			buildPhases = (
+				3B235FACD09FE5A026B5BA3E /* [CP] Check Pods Manifest.lock */,
 				9A9069DA21B8159300364E00 /* Sources */,
 				9A9069DB21B8159300364E00 /* Frameworks */,
 				9A9069DC21B8159300364E00 /* Resources */,
+				C05111C5EB84B416577436AA /* [CP] Embed Pods Frameworks */,
+				DD45AC228B25FBF1D9DA8040 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A9069FE21B8159600364E00 /* Build configuration list for PBXNativeTarget "SicrediChallengeTests" */;
 			buildPhases = (
+				F18FDB53856D2F33E867227B /* [CP] Check Pods Manifest.lock */,
 				9A9069EE21B8159600364E00 /* Sources */,
 				9A9069EF21B8159600364E00 /* Frameworks */,
 				9A9069F021B8159600364E00 /* Resources */,
+				63462750BD8DC7C978CCA1BD /* [CP] Embed Pods Frameworks */,
+				40C4C70F16401EDF87CEDE79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,13 +295,131 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B235FACD09FE5A026B5BA3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SicrediChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40C4C70F16401EDF87CEDE79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63462750BD8DC7C978CCA1BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C05111C5EB84B416577436AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD45AC228B25FBF1D9DA8040 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F18FDB53856D2F33E867227B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SicrediChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A9069DA21B8159300364E00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A9069E421B8159300364E00 /* ViewController.swift in Sources */,
+				9A906A2121B8AEF700364E00 /* CheckInResponseJsonConstants.swift in Sources */,
+				9A906A0521B817A700364E00 /* Request.swift in Sources */,
+				9A906A1A21B84B4600364E00 /* DiscountJsonConstants.swift in Sources */,
+				9A906A1821B8486300364E00 /* Discount.swift in Sources */,
+				9A906A1221B82F9600364E00 /* PersonJsonConstants.swift in Sources */,
+				9A906A1021B826F000364E00 /* EventJsonConstants.swift in Sources */,
+				9A906A0A21B8197B00364E00 /* Event.swift in Sources */,
+				9A906A0821B817B900364E00 /* API.swift in Sources */,
+				9A906A1F21B858CA00364E00 /* Extension+String.swift in Sources */,
+				9A906A0E21B8266600364E00 /* Person.swift in Sources */,
 				9A9069E221B8159300364E00 /* AppDelegate.swift in Sources */,
+				9A906A1C21B8558500364E00 /* CheckInResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +427,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A9069F721B8159600364E00 /* SicrediChallengeTests.swift in Sources */,
+				9A906A1621B83E9300364E00 /* JsonMock.swift in Sources */,
+				9A906A0C21B81AF100364E00 /* RequestClassTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +580,7 @@
 		};
 		9A9069FC21B8159600364E00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0FA7F5E73D2E9A3DCF77D26 /* Pods-SicrediChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +599,7 @@
 		};
 		9A9069FD21B8159600364E00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC75E3098B1E827DB7092E6 /* Pods-SicrediChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,6 +618,7 @@
 		};
 		9A9069FF21B8159600364E00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFA4FEE3443D7223BBC5C5E /* Pods-SicrediChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +640,7 @@
 		};
 		9A906A0021B8159600364E00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86EE159E6542C6A8B400950D /* Pods-SicrediChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
