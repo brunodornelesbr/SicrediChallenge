@@ -66,7 +66,13 @@ class DetailsViewController: UIViewController {
             guard let text = textToShare else {return}
             
             let activityViewController = UIActivityViewController(activityItems: text, applicationActivities: nil)
+            if let popOver = activityViewController.popoverPresentationController {
+                popOver.sourceView = self?.optionsTableViewCell
+               
+            }
+
             self?.present(activityViewController, animated: true, completion: nil)
+            
             }.disposed(by: bag)
         
         optionsTableViewCell.servicesButton.rx.tap.bind{[weak self] _ in
