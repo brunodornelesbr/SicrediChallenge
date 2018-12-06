@@ -9,12 +9,14 @@
 import UIKit
 import ObjectMapper
 class CheckInResponse: Mappable {
-    var code = 0
+    var code : Int =  0
     required convenience init?(map: Map) {
         self.init()
     }
     
     func mapping(map: Map) {
-        code<-map[CheckInResponseJsonConstants.code.rawValue]
+        var stringCode = ""
+        stringCode<-map[CheckInResponseJsonConstants.code.rawValue]
+        code = Int(stringCode) ?? 0 
     }
 }

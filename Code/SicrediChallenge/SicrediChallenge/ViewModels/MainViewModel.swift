@@ -31,6 +31,9 @@ class MainViewModel: NSObject {
         events.value = events.value.filter {event in
         return   event.title.lowercased().contains(searchText.lowercased())
     }
+    }
     
+    func eventForRow(row: Int)->Event{
+        return events.value[row]
     }
 }
