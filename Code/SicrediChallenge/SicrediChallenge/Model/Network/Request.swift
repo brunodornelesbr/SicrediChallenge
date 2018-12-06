@@ -22,5 +22,19 @@ class Request: NSObject {
         Alamofire.request(moreInfoURL,method: .get, parameters : nil, headers : nil).responseArray(completionHandler:{(response:DataResponse<[Event]>) in
             completion(response.result.value ?? [],response.error)
         })}
+    
+    func postCheckIn(name : String,email: String,eventId : String,completion:@escaping(CheckInResponse?,Error?)->()){
+       let checkInURL = API.checkin_url
+        if !email.isValidEmail(testStr: email){
+            completion(nil,RequestError.badEmail)
+        }
+        let parameters = ["name" : name,"email":email,"eventId":eventId]
+        Alamofire.request(checkInURL,method: .post, parameters : parameters, headers : nil).responseObject(completionHandler: {(response:DataResponse<CheckInResponse>) in
+            completion(response.result.value,response.error)
+        })}
 }
 
+
+enum RequestError : Error{
+    case badEmail
+}

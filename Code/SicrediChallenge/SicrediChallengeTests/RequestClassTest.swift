@@ -79,6 +79,13 @@ class RequestClassTest: XCTestCase {
             XCTAssert(result.first?.people.first?.name == peopleArray.first?[PersonJsonConstants.name.rawValue] as? String, "person name malformed")
         })
     }
+    
+    func testCheckInWithBadEmail(){
+        request.postCheckIn(name: "", email: "bruno@dorneles.com", eventId: "", completion: {(response,error) in
+            XCTAssert(error != nil, "Should throw error because of bad email!")
+        })
+    }
+
 }
 
 
