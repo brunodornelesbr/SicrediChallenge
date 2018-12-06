@@ -37,4 +37,5 @@ class Request: NSObject {
 
 enum RequestError : Error{
     case badEmail
+    case badRequestError
 }

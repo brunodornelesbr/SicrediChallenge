@@ -7,12 +7,12 @@
 //
 
 import UIKit
-
+import AlamofireImage
 class MainEventTableViewCell: UITableViewCell {
     @IBOutlet weak var eventThumbnail: UIImageView!
     @IBOutlet weak var eventNameLabel: UILabel!
     
-    var xibName = "MainEventCell"
+    static let xibName = "MainEventCell"
     
     
     override func awakeFromNib() {
@@ -27,7 +27,8 @@ class MainEventTableViewCell: UITableViewCell {
     }
     
     func setup(event : Event){
-        
+        eventNameLabel.text = event.title
+        eventThumbnail.af_setImage(withURL: URL(string:event.image)!)
     }
 
 }
