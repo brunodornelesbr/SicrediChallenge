@@ -18,6 +18,7 @@ class Event: Mappable {
     var date = "1534784400000"
     var people = [Person]()
     var discount : [Discount]?
+    var image = "http://lproweb.procempa.com.br/pmpa/prefpoa/seda_news/usu_img/Papel%20de%20Parede.png"
     required convenience init?(map: Map) {
         self.init()
     }
@@ -32,5 +33,6 @@ class Event: Mappable {
         date<-map[EventJsonConstants.date.rawValue]
         people<-map[EventJsonConstants.people.rawValue]
         discount<-map[EventJsonConstants.discount.rawValue]
+        image<-map[EventJsonConstants.image.rawValue]
         }
 }
