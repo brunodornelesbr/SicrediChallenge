@@ -28,6 +28,9 @@
 		9A906A2121B8AEF700364E00 /* CheckInResponseJsonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A2021B8AEF700364E00 /* CheckInResponseJsonConstants.swift */; };
 		9A906A2521B8B01000364E00 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A2421B8B01000364E00 /* MainViewController.swift */; };
 		9A906A2721B8B03000364E00 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A2621B8B03000364E00 /* MainViewModel.swift */; };
+		9A906A2C21B8B21C00364E00 /* MainEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A906A2B21B8B21B00364E00 /* MainEventCell.xib */; };
+		9A906A2E21B8B33600364E00 /* MainEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A2D21B8B33600364E00 /* MainEventTableViewCell.swift */; };
+		9A906A3021B8B40C00364E00 /* Extension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A2F21B8B40C00364E00 /* Extension+UITableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		9A906A2021B8AEF700364E00 /* CheckInResponseJsonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInResponseJsonConstants.swift; sourceTree = "<group>"; };
 		9A906A2421B8B01000364E00 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9A906A2621B8B03000364E00 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9A906A2B21B8B21B00364E00 /* MainEventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainEventCell.xib; sourceTree = "<group>"; };
+		9A906A2D21B8B33600364E00 /* MainEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEventTableViewCell.swift; sourceTree = "<group>"; };
+		9A906A2F21B8B40C00364E00 /* Extension+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewCell.swift"; sourceTree = "<group>"; };
 		D0FA7F5E73D2E9A3DCF77D26 /* Pods-SicrediChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		EDC75E3098B1E827DB7092E6 /* Pods-SicrediChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		FFFA4FEE3443D7223BBC5C5E /* Pods-SicrediChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,9 +135,8 @@
 				9A906A2821B8B03600364E00 /* ViewModels */,
 				9A906A1D21B858B200364E00 /* Extensions */,
 				9A906A0221B8162500364E00 /* Model */,
-				9A9069E521B8159300364E00 /* Main.storyboard */,
+				9A906A2921B8B0E600364E00 /* Views */,
 				9A9069E821B8159600364E00 /* Assets.xcassets */,
-				9A9069EA21B8159600364E00 /* LaunchScreen.storyboard */,
 				9A9069ED21B8159600364E00 /* Info.plist */,
 			);
 			path = SicrediChallenge;
@@ -184,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				9A906A1E21B858CA00364E00 /* Extension+String.swift */,
+				9A906A2F21B8B40C00364E00 /* Extension+UITableViewCell.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,6 +208,25 @@
 				9A906A2621B8B03000364E00 /* MainViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9A906A2921B8B0E600364E00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A906A2A21B8B1C500364E00 /* Cells */,
+				9A9069E521B8159300364E00 /* Main.storyboard */,
+				9A9069EA21B8159600364E00 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A906A2A21B8B1C500364E00 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9A906A2B21B8B21B00364E00 /* MainEventCell.xib */,
+				9A906A2D21B8B33600364E00 /* MainEventTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		D1A1CEDF7146F9FF70C6804A /* Pods */ = {
@@ -303,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A9069EC21B8159600364E00 /* LaunchScreen.storyboard in Resources */,
+				9A906A2C21B8B21C00364E00 /* MainEventCell.xib in Resources */,
 				9A9069E921B8159600364E00 /* Assets.xcassets in Resources */,
 				9A9069E721B8159300364E00 /* Main.storyboard in Resources */,
 			);
@@ -433,9 +459,11 @@
 				9A906A2121B8AEF700364E00 /* CheckInResponseJsonConstants.swift in Sources */,
 				9A906A2521B8B01000364E00 /* MainViewController.swift in Sources */,
 				9A906A0521B817A700364E00 /* Request.swift in Sources */,
+				9A906A3021B8B40C00364E00 /* Extension+UITableViewCell.swift in Sources */,
 				9A906A1A21B84B4600364E00 /* DiscountJsonConstants.swift in Sources */,
 				9A906A1821B8486300364E00 /* Discount.swift in Sources */,
 				9A906A1221B82F9600364E00 /* PersonJsonConstants.swift in Sources */,
+				9A906A2E21B8B33600364E00 /* MainEventTableViewCell.swift in Sources */,
 				9A906A1021B826F000364E00 /* EventJsonConstants.swift in Sources */,
 				9A906A2721B8B03000364E00 /* MainViewModel.swift in Sources */,
 				9A906A0A21B8197B00364E00 /* Event.swift in Sources */,
