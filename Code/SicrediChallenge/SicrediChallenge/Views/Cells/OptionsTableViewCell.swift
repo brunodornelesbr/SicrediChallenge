@@ -8,11 +8,11 @@
 
 import UIKit
 import MapKit
-
+import RxSwift
 
 class OptionsTableViewCell: UITableViewCell {
     static let xibName = "OptionsViewCell"
-        @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var commentButton: UIButton!
     @IBOutlet weak var addressButton: UIButton!
     @IBOutlet weak var servicesButton: UIButton!
     @IBOutlet weak var mainTextView: UITextView!

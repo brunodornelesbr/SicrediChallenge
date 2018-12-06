@@ -18,19 +18,20 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     let search = UISearchController(searchResultsController: nil)
     
+    //MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewSetup()
         searchBarSetup()
-        // Do any additional setup after loading the view.
     }
+    //MARK: - View setup
     
     func tableViewSetup(){
         tableView.register(UINib(nibName: MainEventTableViewCell.xibName, bundle: nil), forCellReuseIdentifier: MainEventTableViewCell.reuseIdentifier())
-       
+        
         tableView.rx.setDelegate(self).disposed(by: bag)
         mainViewModel.eventObservable.bind(to: tableView.rx.items(cellIdentifier: MainEventTableViewCell.reuseIdentifier(), cellType: MainEventTableViewCell.self)){  row, element, cell in
-           cell.setup(event: element)
+            cell.setup(event: element)
             }.disposed(by: bag)
         
         tableView.rx.itemSelected
@@ -58,7 +59,7 @@ class MainViewController: UIViewController {
     func searchBarRxSetup(){
         search.searchBar.rx.text.asObservable().filter({($0 ?? "").count > 0 }).debounce(0.3, scheduler: MainScheduler.instance).subscribe(onNext: {[weak self] searchText in
             self?.mainViewModel.searchEvents(searchText: searchText!)
-            }).disposed(by: bag)
+        }).disposed(by: bag)
         
         let cancelButtonClicked = search.searchBar.rx.cancelButtonClicked.asObservable()
         let searchTextEmpty = search.searchBar.rx.text.filter({$0 == "" || $0 == nil}).map { _ in () }
@@ -70,16 +71,17 @@ class MainViewController: UIViewController {
             .disposed(by: bag)
     }
     
+    //MARK: - Actions
     
     func selectedEventWithRow(row: Int){
         let event = mainViewModel.eventForRow(row: row) as Any
         performSegue(withIdentifier: "showDetails", sender: event )
     }
-
     
-     // MARK: - Navigation
-     
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "showDetails":
             if let destination = segue.destination as? DetailsViewController, let event = sender as? Event {
@@ -89,11 +91,12 @@ class MainViewController: UIViewController {
             print("destination not being used")
         }
         
-     }
- 
+    }
+    
     
 }
 
+//MARK: - Table view implementation
 
 extension MainViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
