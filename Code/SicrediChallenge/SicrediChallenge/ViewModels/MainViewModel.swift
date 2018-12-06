@@ -23,9 +23,14 @@ class MainViewModel: NSObject {
                 return
             }
      
-            self?.events.value.append(contentsOf: response)
+            self?.events.value = response
         })
     }
     
+    func searchEvents(searchText: String){
+        events.value = events.value.filter {event in
+        return   event.title.lowercased().contains(searchText.lowercased())
+    }
     
+    }
 }

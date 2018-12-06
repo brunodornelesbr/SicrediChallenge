@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewSetup()
-        mainViewModel.requestEvents()
+        searchBarSetup()
         // Do any additional setup after loading the view.
     }
     
@@ -33,6 +33,33 @@ class MainViewController: UIViewController {
             }.disposed(by: bag)
         
         
+    }
+    
+    func searchBarSetup(){
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.definesPresentationContext = true
+        search.searchBar.barStyle = .default
+        search.searchBar.placeholder = "Search for events"
+        search.dimsBackgroundDuringPresentation = false
+        search.searchBar.tintColor = .blue
+        self.navigationItem.searchController = search
+        
+        searchBarRxSetup()
+    }
+    
+    func searchBarRxSetup(){
+        search.searchBar.rx.text.asObservable().filter({($0 ?? "").count > 0 }).debounce(0.3, scheduler: MainScheduler.instance).subscribe(onNext: {[weak self] searchText in
+            self?.mainViewModel.searchEvents(searchText: searchText!)
+            }).disposed(by: bag)
+        
+        let cancelButtonClicked = search.searchBar.rx.cancelButtonClicked.asObservable()
+        let searchTextEmpty = search.searchBar.rx.text.filter({$0 == "" || $0 == nil}).map { _ in () }
+        
+        Observable.merge(cancelButtonClicked, searchTextEmpty)
+            .throttle(0.5, scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] in
+                self?.mainViewModel.requestEvents()})
+            .disposed(by: bag)
     }
     /*
      // MARK: - Navigation
