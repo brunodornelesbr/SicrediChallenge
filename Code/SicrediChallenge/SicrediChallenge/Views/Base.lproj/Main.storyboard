@@ -11,7 +11,7 @@
         <!--Eventos-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Eventos" id="BYZ-38-t0r" customClass="MainViewController" customModule="SicrediChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" title="Eventos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="SicrediChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
         <!--Details View Controller-->
         <scene sceneID="U6w-mm-pg8">
             <objects>
-                <viewController id="ja5-nr-o4y" customClass="DetailsViewController" customModule="SicrediChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ja5-nr-o4y" customClass="DetailsViewController" customModule="SicrediChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D9b-aB-hOF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

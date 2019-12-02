@@ -9,9 +9,9 @@
 import UIKit
 import RxSwift
 class MainViewModel: NSObject {
-    private var events = Variable<[Event]>([])
-    private var error = Variable<Error?>(nil)
-    private var request = Request()
+    internal var events = Variable<[Event]>([])
+    internal var error = Variable<Error?>(nil)
+    var request = Request()
     
     //MARK:- PUBLIC OBSERVABLES
     var eventObservable :Observable<[Event]>{return events.asObservable()}
