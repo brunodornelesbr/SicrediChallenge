@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		64FB9C0A87D1115D5844E7AB /* Pods_SicrediChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F71A9BDC5F0C9FCC715B9D /* Pods_SicrediChallengeTests.framework */; };
 		878A6FF3AA871BE0A8E065AA /* Pods_SicrediChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9591247ADA8FA697F0EB6531 /* Pods_SicrediChallenge.framework */; };
+		9A68D3D423954EEA00495841 /* MainViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A68D3D323954EEA00495841 /* MainViewModelStub.swift */; };
+		9A68D3D623955C4B00495841 /* MainViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A68D3D523955C4B00495841 /* MainViewModelSpec.swift */; };
+		9A68D3D823955CE000495841 /* RequestStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A68D3D723955CE000495841 /* RequestStub.swift */; };
+		9A68D3DA239565E200495841 /* DetailsViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A68D3D9239565E200495841 /* DetailsViewControllerSpec.swift */; };
+		9A68D3DC239567C600495841 /* DetailsViewModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A68D3DB239567C600495841 /* DetailsViewModelStub.swift */; };
 		9A9069E221B8159300364E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9069E121B8159300364E00 /* AppDelegate.swift */; };
 		9A9069E721B8159300364E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9069E521B8159300364E00 /* Main.storyboard */; };
 		9A9069EC21B8159600364E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9069EA21B8159600364E00 /* LaunchScreen.storyboard */; };
 		9A906A0521B817A700364E00 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0421B817A700364E00 /* Request.swift */; };
 		9A906A0821B817B900364E00 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0721B817B900364E00 /* API.swift */; };
 		9A906A0A21B8197B00364E00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0921B8197B00364E00 /* Event.swift */; };
-		9A906A0C21B81AF100364E00 /* RequestClassTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0B21B81AF100364E00 /* RequestClassTest.swift */; };
 		9A906A0E21B8266600364E00 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0D21B8266600364E00 /* Person.swift */; };
 		9A906A1021B826F000364E00 /* EventJsonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A0F21B826F000364E00 /* EventJsonConstants.swift */; };
 		9A906A1221B82F9600364E00 /* PersonJsonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A1121B82F9600364E00 /* PersonJsonConstants.swift */; };
@@ -41,6 +45,7 @@
 		9A906A4421B8C62E00364E00 /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A906A4321B8C62E00364E00 /* Extension+UIButton.swift */; };
 		9AB88D6C23953B9C00CE85DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB88D6B23953B9B00CE85DE /* Assets.xcassets */; };
 		9AB88D6E23953CAA00CE85DE /* AssetsImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB88D6D23953CAA00CE85DE /* AssetsImage.swift */; };
+		9AB88D7023954B2F00CE85DE /* MainViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB88D6F23954B2F00CE85DE /* MainViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		73F71A9BDC5F0C9FCC715B9D /* Pods_SicrediChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86EE159E6542C6A8B400950D /* Pods-SicrediChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		9591247ADA8FA697F0EB6531 /* Pods_SicrediChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SicrediChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A68D3D323954EEA00495841 /* MainViewModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelStub.swift; sourceTree = "<group>"; };
+		9A68D3D523955C4B00495841 /* MainViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelSpec.swift; sourceTree = "<group>"; };
+		9A68D3D723955CE000495841 /* RequestStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestStub.swift; sourceTree = "<group>"; };
+		9A68D3D9239565E200495841 /* DetailsViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewControllerSpec.swift; sourceTree = "<group>"; };
+		9A68D3DB239567C600495841 /* DetailsViewModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelStub.swift; sourceTree = "<group>"; };
 		9A9069DE21B8159300364E00 /* SicrediChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SicrediChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9069E121B8159300364E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A9069E621B8159300364E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,7 +77,6 @@
 		9A906A0421B817A700364E00 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9A906A0721B817B900364E00 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		9A906A0921B8197B00364E00 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		9A906A0B21B81AF100364E00 /* RequestClassTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestClassTest.swift; sourceTree = "<group>"; };
 		9A906A0D21B8266600364E00 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9A906A0F21B826F000364E00 /* EventJsonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventJsonConstants.swift; sourceTree = "<group>"; };
 		9A906A1121B82F9600364E00 /* PersonJsonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonJsonConstants.swift; sourceTree = "<group>"; };
@@ -93,6 +102,7 @@
 		9A906A4321B8C62E00364E00 /* Extension+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
 		9AB88D6B23953B9B00CE85DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB88D6D23953CAA00CE85DE /* AssetsImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsImage.swift; sourceTree = "<group>"; };
+		9AB88D6F23954B2F00CE85DE /* MainViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerSpec.swift; sourceTree = "<group>"; };
 		D0FA7F5E73D2E9A3DCF77D26 /* Pods-SicrediChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		EDC75E3098B1E827DB7092E6 /* Pods-SicrediChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallenge/Pods-SicrediChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		FFFA4FEE3443D7223BBC5C5E /* Pods-SicrediChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SicrediChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SicrediChallengeTests/Pods-SicrediChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +135,16 @@
 				73F71A9BDC5F0C9FCC715B9D /* Pods_SicrediChallengeTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A68D3D223954ED000495841 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				9A68D3D323954EEA00495841 /* MainViewModelStub.swift */,
+				9A68D3DB239567C600495841 /* DetailsViewModelStub.swift */,
+				9A68D3D723955CE000495841 /* RequestStub.swift */,
+			);
+			path = Stub;
 			sourceTree = "<group>";
 		};
 		9A9069D521B8159300364E00 = {
@@ -165,7 +185,10 @@
 		9A9069F521B8159600364E00 /* SicrediChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A906A0B21B81AF100364E00 /* RequestClassTest.swift */,
+				9A68D3D223954ED000495841 /* Stub */,
+				9AB88D6F23954B2F00CE85DE /* MainViewControllerSpec.swift */,
+				9A68D3D523955C4B00495841 /* MainViewModelSpec.swift */,
+				9A68D3D9239565E200495841 /* DetailsViewControllerSpec.swift */,
 				9A906A1521B83E9300364E00 /* JsonMock.swift */,
 				9A9069F821B8159600364E00 /* Info.plist */,
 			);
@@ -482,8 +505,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A68D3DC239567C600495841 /* DetailsViewModelStub.swift in Sources */,
 				9A906A1621B83E9300364E00 /* JsonMock.swift in Sources */,
-				9A906A0C21B81AF100364E00 /* RequestClassTest.swift in Sources */,
+				9A68D3D423954EEA00495841 /* MainViewModelStub.swift in Sources */,
+				9A68D3D823955CE000495841 /* RequestStub.swift in Sources */,
+				9A68D3D623955C4B00495841 /* MainViewModelSpec.swift in Sources */,
+				9A68D3DA239565E200495841 /* DetailsViewControllerSpec.swift in Sources */,
+				9AB88D7023954B2F00CE85DE /* MainViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

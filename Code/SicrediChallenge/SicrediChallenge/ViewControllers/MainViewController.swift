@@ -23,7 +23,6 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         tableViewSetup()
         searchBarSetup()
-        requestPermissionForMap()
     }
     //MARK: - View setup
     
@@ -59,7 +58,7 @@ class MainViewController: UIViewController {
     
     func searchBarRxSetup(){
         search.searchBar.rx.text.asObservable().filter({($0 ?? "").count > 0 }).debounce(0.3, scheduler: MainScheduler.instance).subscribe(onNext: {[weak self] searchText in
-            self?.mainViewModel.searchEvents(searchText: searchText!)
+            self?.searchFor(text: searchText ?? "")
         }).disposed(by: bag)
         
         let cancelButtonClicked = search.searchBar.rx.cancelButtonClicked.asObservable()
@@ -79,9 +78,10 @@ class MainViewController: UIViewController {
         performSegue(withIdentifier: "showDetails", sender: event )
     }
     
-    func requestPermissionForMap(){
-        
+    func searchFor(text: String){
+        mainViewModel.searchEvents(searchText: text)
     }
+
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
