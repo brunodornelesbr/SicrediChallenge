@@ -28,7 +28,12 @@ class MainEventTableViewCell: UITableViewCell {
     
     func setup(event : Event){
         eventNameLabel.text = event.title
-        eventThumbnail.af_setImage(withURL: URL(string:event.image)!)
+        
+        guard let imageUrl =  URL(string:event.image) else {
+                  eventThumbnail.image = AssetsImage.noDataImage
+                  return}
+        eventThumbnail.af_setImage(withURL: imageUrl, placeholderImage: AssetsImage.noDataImage)
+       
     }
 
 }

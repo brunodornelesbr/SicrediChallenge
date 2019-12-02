@@ -12,8 +12,8 @@ class Event: Mappable {
     var id = "0"
     var title = "No Title"
     var price : Double = 0.0
-    var latitude = "0.0"
-    var longitude = "0.0"
+    var latitude :Double = 0.0
+    var longitude : Double = 0.0
     var description = ""
     var date = "1534784400000"
     var people = [Person]()

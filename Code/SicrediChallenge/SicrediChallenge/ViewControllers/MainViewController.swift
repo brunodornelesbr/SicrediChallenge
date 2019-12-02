@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         tableViewSetup()
         searchBarSetup()
+        requestPermissionForMap()
     }
     //MARK: - View setup
     
@@ -47,8 +48,8 @@ class MainViewController: UIViewController {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.definesPresentationContext = true
         self.definesPresentationContext = true
-        search.searchBar.barStyle = .default
-        search.searchBar.placeholder = "Search for events"
+        search.searchBar.barStyle = .black
+        search.searchBar.placeholder = "Pesquise por eventos"
         search.dimsBackgroundDuringPresentation = false
         search.searchBar.tintColor = .white
         self.navigationItem.searchController = search
@@ -78,7 +79,9 @@ class MainViewController: UIViewController {
         performSegue(withIdentifier: "showDetails", sender: event )
     }
     
-    
+    func requestPermissionForMap(){
+        
+    }
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

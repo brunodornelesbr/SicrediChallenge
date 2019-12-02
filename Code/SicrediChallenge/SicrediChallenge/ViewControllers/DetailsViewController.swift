@@ -77,7 +77,7 @@ class DetailsViewController: UIViewController {
         
         optionsTableViewCell.servicesButton.rx.tap.bind{[weak self] _ in
             
-            let alertController = UIAlertController(title: "Discounts", message: "Available discounts", preferredStyle: UIAlertController.Style.alert)
+            let alertController = UIAlertController(title: "Descontos", message: "Descontos disponiveis", preferredStyle: UIAlertController.Style.alert)
             self?.detailsViewModel.getDiscounts().forEach { discount in
                 alertController.addAction(
                     UIAlertAction(title: "\(discount.discount)", style: .default, handler: nil)
@@ -89,13 +89,13 @@ class DetailsViewController: UIViewController {
     
     func userFeedbackRxSetup(){
         detailsViewModel.checkinObservable.filter({return $0}).subscribe({[weak self] _ in
-            let alert = UIAlertController(title: "CHECKIN", message: "Checkin sucessful!", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "CHECKIN", message: "Checkin ok!", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
             self?.present(alert, animated: true, completion: nil)
         }).disposed(by: bag)
         
         detailsViewModel.errorObservable.filterNil().subscribe({[weak self] _ in
-            let alert = UIAlertController(title: "Error", message: "An error has occured", preferredStyle: UIAlertController.Style.alert)
+            let alert = UIAlertController(title: "Erro", message: "Um erro inesperado ocorreu", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
             self?.present(alert, animated: true, completion: nil)
         }).disposed(by: bag)
@@ -103,15 +103,15 @@ class DetailsViewController: UIViewController {
     }
      //MARK: - Actions
     func requestInfoForUser(){
-        let alert = UIAlertController(title: "CHECKIN", message: "We need your name and email to checkin", preferredStyle: .alert)
+        let alert = UIAlertController(title: "CHECKIN", message: "Precisamos do seu nome e email para fazer checkin", preferredStyle: .alert)
         
         alert.addTextField { (textField) in
-            textField.placeholder = "Name"
+            textField.placeholder = "Nome"
         }
         alert.addTextField { (textField) in
             textField.placeholder = "Email"
         }
-        alert.addAction(UIAlertAction(title: "Name and email", style: .default, handler: { [weak self] _ in
+        alert.addAction(UIAlertAction(title: "Checkin", style: .default, handler: { [weak self] _ in
             let nameField = alert.textFields![0]
             let emailField = alert.textFields![1]
             
