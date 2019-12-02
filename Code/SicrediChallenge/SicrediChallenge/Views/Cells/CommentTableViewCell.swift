@@ -29,8 +29,13 @@ class CommentTableViewCell: UITableViewCell {
     }
     
     func setup(person : Person){
-        mainImage.af_setImage(withURL: URL(string:person.picture)!)
         nameView.text = person.name
+        guard let urlPicture = URL(string: person.picture) else {
+            mainImage.image = AssetsImage.noDataImage
+                              return}
+        
+        mainImage.af_setImage(withURL: urlPicture, placeholderImage: AssetsImage.noDataImage)
+       
     }
     
     

@@ -20,9 +20,6 @@ class OptionsTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        commentButton.alignImageAndTitleVertically()
-        addressButton.alignImageAndTitleVertically()
-        servicesButton.alignImageAndTitleVertically()
         
     }
 
