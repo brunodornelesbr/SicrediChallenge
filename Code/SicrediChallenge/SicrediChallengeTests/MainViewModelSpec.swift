@@ -10,13 +10,15 @@ import Quick
 import Nimble
 import UIKit
 @testable import SicrediChallenge
+
 class  MainViewModelSpec : QuickSpec {
+
     override func spec() {
         describe("MainViewModel"){
             let mainViewModel = MainViewModel()
-            var stub = RequestStub()
+            let stub = RequestStub()
             mainViewModel.request = stub
-            context("when requesting events an has an error"){
+            context("when requesting events has an error"){
                 stub.prepareRequestToReturnAnError()
                 mainViewModel.requestEvents()
                 it("should set an error"){
@@ -30,7 +32,6 @@ class  MainViewModelSpec : QuickSpec {
                     expect(mainViewModel.events.value.count).toEventually(equal(1))
                 }
             }
-            
         }
     }
     

@@ -14,7 +14,6 @@ class OptionsTableViewCell: UITableViewCell {
     static let xibName = "OptionsViewCell"
     @IBOutlet weak var commentButton: UIButton!
     @IBOutlet weak var addressButton: UIButton!
-    @IBOutlet weak var servicesButton: UIButton!
     @IBOutlet weak var mainTextView: UITextView!
     @IBOutlet weak var mapView: MKMapView!
     
@@ -22,17 +21,10 @@ class OptionsTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
     
-    func setup(event : Event){
+    func setup(event : Event) {
         
-        let initialLocation = CLLocation(latitude: Double(event.latitude) ?? 0.0, longitude:Double(event.longitude) ?? 0.0)
+        let initialLocation = CLLocation(latitude: Double(event.latitude), longitude: Double(event.longitude))
         let annotation = MKPointAnnotation()
         
         let region = MKCoordinateRegion(center: initialLocation.coordinate,

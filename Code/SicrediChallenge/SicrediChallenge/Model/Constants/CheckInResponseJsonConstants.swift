@@ -8,6 +8,6 @@
 
 import UIKit
 
-enum CheckInResponseJsonConstants : String {
+enum CheckInResponseJsonConstants: String {
     case code = "code"
 }

@@ -9,24 +9,33 @@
 import UIKit
 import RxSwift
 class DetailsViewModel {
-    private var eventVariable : Variable<Event>!
+    private var eventVariable: Variable<Event>!
     private var isLoadingMoreInfo = Variable(false)
     private var error = Variable<Error?>(nil)
     private var isCheckinOk = Variable(false)
 
     private var request = Request()
+    
     //MARK:- PUBLIC OBSERVABLES
-    var titleObservable : Observable<Event>{return eventVariable.asObservable()}
-    var errorObservable : Observable<Error?>{return error.asObservable()}
-    var loadingObservable : Observable<Bool>{return isLoadingMoreInfo.asObservable()}
-    var checkinObservable : Observable<Bool>{return isCheckinOk.asObservable()}
+    public var titleObservable: Observable<Event>{
+        return eventVariable.asObservable()
+    }
+    public var errorObservable: Observable<Error?>{
+        return error.asObservable()
+    }
+    public var loadingObservable: Observable<Bool>{
+        return isLoadingMoreInfo.asObservable()
+    }
+    public var checkinObservable: Observable<Bool>{
+        return isCheckinOk.asObservable()
+    }
 
     init(event: Event) {
         eventVariable = Variable(event)
         loadMoreInfo()
     }
     
-    func loadMoreInfo(){
+    public func loadMoreInfo() {
         isLoadingMoreInfo.value = true
         request.requestMoreInfo(eventId: eventVariable.value.id, completion: {[weak self](response,error) in
             guard error == nil || response != nil else
@@ -39,21 +48,19 @@ class DetailsViewModel {
         )
     }
     
-    func peopleCount()->Int{return eventVariable.value.people.count}
+    public func peopleCount()-> Int {
+        return eventVariable.value.people.count
+    }
     
-    func requestPersonForRow(index : Int)->Person{
+    public func requestPersonForRow(index: Int)-> Person {
         return eventVariable.value.people[index]
     }
     
-    func textToShare()->[String]{
+    public func textToShare()-> [String] {
         return ["\(eventVariable.value.title) : \(eventVariable.value.description)"]
     }
-    
-    func getDiscounts()->[Discount]{
-        return eventVariable.value.discount ?? []
-    }
-    
-    func checkin(email: String?, name : String?){
+
+    public func checkin(email: String?, name: String?) {
         guard let emailSafe = email , let nameSafe = name else {error.value = RequestError.badEmail
             return
         }
