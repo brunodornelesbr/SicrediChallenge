@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum PersonJsonConstants : String {
+enum PersonJsonConstants: String {
     case id = "id"
     case eventId = "eventId"
     case name = "name"

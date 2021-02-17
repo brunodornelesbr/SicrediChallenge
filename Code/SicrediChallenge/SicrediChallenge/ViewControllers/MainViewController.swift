@@ -9,13 +9,14 @@
 import UIKit
 import RxCocoa
 import RxSwift
+
 class MainViewController: UIViewController {
     
     var mainViewModel = MainViewModel()
     var bag = DisposeBag()
     
     //MARK: - Outlets and Components
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet  weak var tableView: UITableView!
     let search = UISearchController(searchResultsController: nil)
     
     //MARK: - View lifecycle
@@ -25,8 +26,7 @@ class MainViewController: UIViewController {
         searchBarSetup()
     }
     //MARK: - View setup
-    
-    func tableViewSetup(){
+    private func tableViewSetup() {
         tableView.register(UINib(nibName: MainEventTableViewCell.xibName, bundle: nil), forCellReuseIdentifier: MainEventTableViewCell.reuseIdentifier())
         
         tableView.rx.setDelegate(self).disposed(by: bag)
@@ -43,7 +43,7 @@ class MainViewController: UIViewController {
         
     }
     
-    func searchBarSetup(){
+    private func searchBarSetup() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.definesPresentationContext = true
         self.definesPresentationContext = true
@@ -56,7 +56,7 @@ class MainViewController: UIViewController {
         searchBarRxSetup()
     }
     
-    func searchBarRxSetup(){
+    private func searchBarRxSetup() {
         search.searchBar.rx.text.asObservable().filter({($0 ?? "").count > 0 }).debounce(0.3, scheduler: MainScheduler.instance).subscribe(onNext: {[weak self] searchText in
             self?.searchFor(text: searchText ?? "")
         }).disposed(by: bag)
@@ -72,18 +72,16 @@ class MainViewController: UIViewController {
     }
     
     //MARK: - Actions
-    
-    func selectedEventWithRow(row: Int){
+    public func selectedEventWithRow(row: Int){
         let event = mainViewModel.eventForRow(row: row) as Any
         performSegue(withIdentifier: "showDetails", sender: event )
     }
     
-    func searchFor(text: String){
+    public func searchFor(text: String){
         mainViewModel.searchEvents(searchText: text)
     }
 
     // MARK: - Navigation
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "showDetails":
@@ -93,16 +91,12 @@ class MainViewController: UIViewController {
         default:
             print("destination not being used")
         }
-        
     }
-    
-    
 }
 
 //MARK: - Table view implementation
-
 extension MainViewController : UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    internal func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
 }

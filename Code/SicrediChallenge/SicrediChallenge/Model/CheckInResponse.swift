@@ -8,8 +8,9 @@
 
 import UIKit
 import ObjectMapper
+
 class CheckInResponse: Mappable {
-    var code : Int =  0
+    var code: Int =  0
     required convenience init?(map: Map) {
         self.init()
     }

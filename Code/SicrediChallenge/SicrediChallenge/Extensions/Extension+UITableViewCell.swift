@@ -9,7 +9,7 @@
 import UIKit
 
 extension UITableViewCell{
-   static func reuseIdentifier()->String{
+   static func reuseIdentifier()-> String {
         return  String(describing: type(of: self))
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 struct API {
-    static let event_url = "http://5b840ba5db24a100142dcd8c.mockapi.io/api/events"
-    static let event_detail = "http://5b840ba5db24a100142dcd8c.mockapi.io/api/events/%@"
-    static let checkin_url = "http://5b840ba5db24a100142dcd8c.mockapi.io/api/checkin"
+    static let event_url = "http://5f5a8f24d44d640016169133.mockapi.io/api/events"
+    static let event_detail = "http://5f5a8f24d44d640016169133.mockapi.io/api/events/%@"
+    static let checkin_url = "http://5f5a8f24d44d640016169133.mockapi.io/api/checkin"
 }

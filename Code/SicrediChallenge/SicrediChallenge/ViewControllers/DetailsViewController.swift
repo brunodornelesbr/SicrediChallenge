@@ -10,27 +10,29 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxOptional
+
 class DetailsViewController: UIViewController {
-    var detailsViewModel : DetailsViewModel!
+
+    var detailsViewModel: DetailsViewModel!
     var bag = DisposeBag()
     
     //MARK: - Outlets and Components
     @IBOutlet weak var tableView: UITableView!
-    var imageViewCell : ImageViewTableViewCell!
-    var optionsTableViewCell : OptionsTableViewCell!
-    var mainViewModel : MainViewModel!
-     //MARK: - View lifecycle
+    var imageViewCell: ImageViewTableViewCell!
+    var optionsTableViewCell: OptionsTableViewCell!
+    var mainViewModel: MainViewModel!
+
+    //MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewSetup()
         buttonsRxSetup()
         userFeedbackRxSetup()
         self.navigationItem.largeTitleDisplayMode = .never
-        
-        // Do any additional setup after loading the view.
     }
+    
     //MARK: - View setup
-    func tableViewSetup(){
+   private func tableViewSetup() {
         imageViewCell = Bundle.main.loadNibNamed(ImageViewTableViewCell.xibName, owner: nil, options: nil)?.first as? ImageViewTableViewCell
         optionsTableViewCell = Bundle.main.loadNibNamed(OptionsTableViewCell.xibName, owner: nil, options: nil)?.first as? OptionsTableViewCell
         
@@ -38,7 +40,7 @@ class DetailsViewController: UIViewController {
         tableViewRxSetup()
     }
     
-    func tableViewRxSetup(){
+    private func tableViewRxSetup() {
         tableView.rx.setDataSource(self).disposed(by: bag)
         tableView.rx.setDelegate(self).disposed(by: bag)
         
@@ -54,7 +56,7 @@ class DetailsViewController: UIViewController {
         
     }
     
-    func buttonsRxSetup(){
+    private func buttonsRxSetup() {
         optionsTableViewCell.addressButton.rx.tap.bind{[weak self] _ in
             self?.requestInfoForUser()
             
@@ -74,20 +76,9 @@ class DetailsViewController: UIViewController {
             self?.present(activityViewController, animated: true, completion: nil)
             
             }.disposed(by: bag)
-        
-        optionsTableViewCell.servicesButton.rx.tap.bind{[weak self] _ in
-            
-            let alertController = UIAlertController(title: "Descontos", message: "Descontos disponiveis", preferredStyle: UIAlertController.Style.alert)
-            self?.detailsViewModel.getDiscounts().forEach { discount in
-                alertController.addAction(
-                    UIAlertAction(title: "\(discount.discount)", style: .default, handler: nil)
-                )
-            }
-            self?.present(alertController, animated: true, completion: nil)
-            }.disposed(by: bag)
     }
     
-    func userFeedbackRxSetup(){
+    private func userFeedbackRxSetup() {
         detailsViewModel.checkinObservable.filter({return $0}).subscribe({[weak self] _ in
             let alert = UIAlertController(title: "CHECKIN", message: "Checkin ok!", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
@@ -101,9 +92,10 @@ class DetailsViewController: UIViewController {
         }).disposed(by: bag)
         
     }
+
      //MARK: - Actions
-    func requestInfoForUser(){
-        let alert = UIAlertController(title: "CHECKIN", message: "Precisamos do seu nome e email para fazer checkin", preferredStyle: .alert)
+    private func requestInfoForUser(){
+        let alert = UIAlertController(title: "CHECK-IN", message: "Precisamos do seu nome e email para fazer checkin", preferredStyle: .alert)
         
         alert.addTextField { (textField) in
             textField.placeholder = "Nome"
@@ -122,10 +114,12 @@ class DetailsViewController: UIViewController {
     
     
 }
- //MARK: - Table view implementation
+
+//MARK: - Table view implementation
 //This was necessary due to how  I wanted the tableview to have fixed cells
 extension DetailsViewController : UITableViewDataSource,UITableViewDelegate{
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
             return imageViewCell
@@ -140,11 +134,11 @@ extension DetailsViewController : UITableViewDataSource,UITableViewDelegate{
         
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2 + detailsViewModel.peopleCount()
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+   private func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
             return 315

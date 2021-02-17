@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum EventJsonConstants : String {
+enum EventJsonConstants: String {
     case id = "id"
     case title = "title"
     case price = "price"

@@ -18,7 +18,6 @@ class DetailsViewControllerSpec: QuickSpec {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let detailsViewController = storyboard.instantiateViewController(withIdentifier: "detail") as! DetailsViewController
                 
-                
                 detailsViewController.loadView()
                 detailsViewController.detailsViewModel = DetailsViewModelStub(event: Event())
                 detailsViewController.viewDidLoad()
